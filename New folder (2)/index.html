@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Hello faizan ali</h1>
+      <h2 class="heading"></h2>
+    </div>
+  </body>
+  <script>
+    function random() {
+      let num = Number(prompt("enter any number"));
+      if (num >= 10) {
+        console.log("your logic is building is good");
+      } else if (num <= 10) {
+        console.log("you logic building is very week");
+      } else {
+        console.log(none);
+      }
+      let number = [];
+      number.push(num);
+      console.log(number);
+      if (num == 10) {
+        console.log(num - 1);
+      } else {
+        console.log("in this way you are wrong");
+      }
+      for (let newnum = 10; newnum >= num; newnum--) {
+        console.log(newnum);
+      }
+      let numb = 5;
+      for (let nums = 2; nums <= numb; nums++) {
+        console.log("another loop", nums);
+      }
+      let value = Number(prompt("Enter any number"));
+      for (let values = 10; values >= value; values--) {
+        console.log(values);
+      }
+      let price = 4;
+      let discount = 2;
+      while (price < 10) {
+        price++;
+        console.log(price);
+      }
+    }
+
+    let num1 = 10;
+    let num2 = 20;
+    if (num1 > num2) {
+      console.log("the largest number is ", num1);
+    } else if (num2 > num1) {
+      console.log("the largest  number is", num2);
+    }
+    let minusnumber = -5;
+    let plusnumber = +3;
+    let findsign = Math.sign(plusnumber);
+
+    console.log("the sign is ", findsign);
+
+    let customnumber = [9, 8, 7, 6, 5];
+    let sortedfilter = customnumber.sort();
+    console.log("the sorted number is", sortedfilter);
+
+    let anyvalue = Number(prompt("enter any number"));
+    let squareroot = Math.sqrt(anyvalue);
+    console.log("the  square root is that:-", squareroot);
+
+    let strings = ["apple", "mango", "ornage"];
+    strings.map((items, index) => {
+      console.log(items);
+    });
+    let students = ["yasir", "nida", "mehreen"];
+    students.map((name, index) => {
+      console.log("the student name is that :- ", name);
+    });
+    function innerhtmls() {
+      const headings = document.querySelector(".heading");
+      let text = Number(prompt("Enter any thing"));
+      headings.innerHTML = text;
+    }
+    innerhtmls();
+    random();
+  </script>
+</html>
