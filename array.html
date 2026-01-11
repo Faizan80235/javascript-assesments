@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let numbers = [1, 2, 3, 4, 5];
+    numbers.forEach((num, index) => {
+      console.log(num);
+    });
+    let digits = [2, 4, 6, 8];
+    digits.map((digit, index) => {
+      console.log("the digit is ", digit * 2);
+    });
+    let fruits = ["apple", "banana", "mango", "orange"];
+    fruits.map((fruitsnames, index) => {
+      if (fruitsnames.length > 8) {
+        console.log("the length of fruit is", fruitsnames);
+      }
+    });
+    let sqrnumber = [1, 2, 3, 4, 5];
+    sqrnumber.map((sqrnum, index) => {
+      console.log("the sqaure roor is that", sqrnum * sqrnum);
+      
+    });
+    sqrnumber.reduce((acc,ccur)=>{
+              console.log("the sqaure root is that", acc*acc);
+
+    })
+    
+  </script>
+</html>

@@ -6,9 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
+    <div id="div">
       <h1>Hello faizan ali</h1>
       <h2 class="heading"></h2>
+      <h1 id="main">1</h1>
+      <button id="inc">increment</button>
+      <button id="decrement">decrement</button>
     </div>
   </body>
   <script>
@@ -83,6 +86,40 @@
       headings.innerHTML = text;
     }
     innerhtmls();
+
+    let fruits = ["apple", "mango", "banana", "orange"];
+    fruits.push("grapes");
+    fruits.pop();
+    let sorted_fruits = fruits.sort();
+    console.log("the sorted fruit is this", fruits);
+    let incbtn = document.getElementById("inc");
+    let countervalue = document.getElementById("main");
+    let div = document.getElementById("div");
+    let increment = () => {
+      let exactvalue = Number(countervalue.innerText);
+      console.log("the value of counter is ", exactvalue);
+      let i = 0;
+      while (i < 1) {
+        exactvalue++;
+        i++;
+      }
+      if (exactvalue == 10) {
+        div.style.backgroundColor = "black";
+        div.style.color = "white";
+      }
+      countervalue.innerText = exactvalue;
+    };
+    incbtn.addEventListener("click", increment);
+    let decrementbtn = document.getElementById("decrement");
+    function decrement() {
+      let exactdecrementvalue = Number(countervalue.innerText);
+      console.log("the value of decremnet is that it", exactdecrementvalue);
+      for (let n = 2; n >= exactdecrementvalue; n++) {
+        exactdecrementvalue--;
+        countervalue.innerText = exactdecrementvalue;
+      }
+    }
+    decrementbtn.addEventListener("click", decrement);
     random();
   </script>
 </html>
